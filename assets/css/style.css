@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #072f36;
+    --color-heading: #072744;
+    --color-base: #66b3be;
+    --color-base2: #bfe1e8;
+    --color-brand: #504d34;
+    --color-brand2: #3a9a92;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+.dark {
+    --color-body: #fefefe;
+    --color-heading: #eef3db;
+    --color-base: #53055b;
+    --color-base2:  rgb(33, 10, 44);
+    --color-brand: rgb(172, 218, 73);
+    --color-brand2: #c0df78;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+.dark .navbar {
+
+    background: linear-gradient(rgba(77, 20, 83, 0.8),rgba(85, 29, 88, 0.8), rgb(52, 17, 69)), url(../images/sidebar-img.jpg);
+}
+.dark #myProgress {
+    width: 100%;
+    background-color: rgb(167, 167, 142);
+  }
+
+.dark .btn-brand:hover {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+    -webkit-animation: darkglowing 1s ease-in-out infinite alternate;
+    -moz-animation: darkglowing 1s ease-in-out infinite alternate;
+    animation: darkglowing 1s ease-in-out infinite alternate;
+}
+
+.dark .btn-brand {
+    background-color: #a8f44a ;
+    color: var(--color-base);
+}
+body {
+    background-color:var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+.home-img1 {
+    position: absolute; 
+    top: 50px; 
+    left: 925px; 
+    z-index: 2;
+}
+
+.home-img1:hover{
+    animation: floatimage 4s ease-in-out infinite;
+}
+
+#button{
+    position: fixed;
+    right: 40px;
+    top: 30px;
+    max-width: 991px;
+    width: 40px;
+    height: 40px;
+    border:none;
+    cursor: pointer;
+    background-color:none;
+    font-size: 10px;
+    animation: slideDown 3s ease-in-out;
+}
+.col-lg-15{
+    left: 100%;
+}
+#intro{
+    animation: slideRight 3s ease-in ;
+}
+#brief{
+    animation: slideLeft 3s ease-in ;
+}
+.Download{
+    animation: slideUp 3s ease-in-out;
+}
+.para{
+    text-align: justify;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+    flex:1;
+    text-align: right;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+    
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+    
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+    
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    animation: slideRight 3s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+
+}
+.auto-type {
+    color:var(--color-brand2);
+}
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+.nav-item{
+
+    
+} 
+
+#imgbar{
+    max-width: 160px;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(93, 198, 227, 0.8), rgba(3, 51, 71, 0.8)), url(../images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+    -webkit-text-fill-color: #060010;
+    
+}
+
+.btn-brand {
+    background-color: #509ba6 ;
+    /* border-color: var(--color-brand); */
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 60px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+@keyframes floatimage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+@-webkit-keyframes glowing {
+    from {
+      box-shadow: 0 0 10px #38a9bc, 0 0 20px #6fd5e2, 0 0 40px #5fd7cd;
+    }
+    to {
+    }
+  }
+@-webkit-keyframes darkglowing {
+    from {
+      box-shadow: 0 0 10px #81b83b, 0 0 20px #3ba939;
+    }
+    to {
+     
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(#060606);
+  font-weight: bold;
+  font-size: 25px;
+  transition: 5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0d0222;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* EXPERIENCE PROGRESS BAR */
+#myProgress {
+    width: 100%;
+    background-color: rgb(146, 148, 120);
+  }
+  
+  #myBar1 {
+    width: 89%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar2 {
+    width: 93%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar3 {
+    width: 85%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar4 {
+    width: 90%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar5 {
+    width: 75%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar6 {
+    width: 85%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar7 {
+    width: 70%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar8 {
+    width: 60%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+  #myBar9 {
+    width: 80%;
+    height: 20px;
+    background-color: var(--color-brand);
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 10px; /* To center it vertically */
+    color: var(--color-base2);
+  
+  }
+
