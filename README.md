@@ -1,4 +1,4 @@
-# prachiportfolio
+# Prachi Portfolio
 My portfolio website
 Using HTML,CSS JavaScript and Bootstrap.
 
