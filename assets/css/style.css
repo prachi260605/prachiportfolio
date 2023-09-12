@@ -5,7 +5,7 @@
     --color-heading: #072744;
     --color-base: #66b3be;
     --color-base2: #bfe1e8;
-    --color-brand: #504d34;
+    --color-brand: #055c5c;
     --color-brand2: #3a9a92;
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
@@ -21,6 +21,7 @@
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
+
 .dark .navbar {
 
     background: linear-gradient(rgba(77, 20, 83, 0.8),rgba(85, 29, 88, 0.8), rgb(52, 17, 69)), url(../images/sidebar-img.jpg);
@@ -28,7 +29,7 @@
 .dark #myProgress {
     width: 100%;
     background-color: rgb(167, 167, 142);
-  }
+}
 
 .dark .btn-brand:hover {
     background-color: var(--color-brand2);
@@ -55,9 +56,9 @@ body {
     z-index: 2;
 }
 
-.home-img1:hover{
+/* .home-img1:hover{
     animation: floatimage 4s ease-in-out infinite;
-}
+} */
 
 #button{
     position: fixed;
@@ -75,7 +76,7 @@ body {
 .col-lg-15{
     left: 100%;
 }
-#intro{
+/* #intro{
     animation: slideRight 3s ease-in ;
 }
 #brief{
@@ -83,7 +84,7 @@ body {
 }
 .Download{
     animation: slideUp 3s ease-in-out;
-}
+} */
 .para{
     text-align: justify;
 }
@@ -163,8 +164,8 @@ img {
     text-transform: uppercase;
     color: #fff;
     display: inline-block;
-    animation: slideRight 3s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
+    /* animation: slideRight 1s ease forwards; */
+    /* animation-delay: calc(0.2s * var(--i)); */
 
 }
 .auto-type {
@@ -459,7 +460,7 @@ img {
 /* EXPERIENCE PROGRESS BAR */
 #myProgress {
     width: 100%;
-    background-color: rgb(146, 148, 120);
+    background-color: rgba(177, 176, 181, 0.9);
   }
   
   #myBar1 {
